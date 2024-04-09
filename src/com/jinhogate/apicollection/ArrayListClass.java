@@ -119,5 +119,17 @@ public class ArrayListClass {
 //        System.out.println("Affiche les chiffres : " + chiffres);
 //        chiffres.replaceAll(chiffre -> chiffre = 0); //UnsupportedOperationException
 //        System.out.println("Affiche les chiffres : " + chiffres);
+
+        /***
+         * Copie d'une liste
+         */
+        System.out.println("#Copie d'une liste immutable");
+        List<Integer> ents = List.of(1, 2, 3);
+        ArrayList<Integer> entsCopy = new ArrayList<>(ents);
+        System.out.println("Affichage entsCopy : " + entsCopy );
+        System.out.println("Modification d'une liste immutable");
+        entsCopy.add(4);
+        System.out.println("Affichage entsCopy : " + entsCopy );
+
     }
 }
