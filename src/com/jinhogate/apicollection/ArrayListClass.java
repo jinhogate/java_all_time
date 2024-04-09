@@ -113,8 +113,11 @@ public class ArrayListClass {
         System.out.println("#Création des listes immutables avec List.of et Set.of");
         List<Integer> chiffres = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
         System.out.println("Affiche les chiffres : " + chiffres);
-
-
-
+//        chiffres.add(10); //UnsupportedOperationException
+//        System.out.println("Affiche les chiffres : " + chiffres);
+//        chiffres.remove(2); //UnsupportedOperationException
+//        System.out.println("Affiche les chiffres : " + chiffres);
+//        chiffres.replaceAll(chiffre -> chiffre = 0); //UnsupportedOperationException
+//        System.out.println("Affiche les chiffres : " + chiffres);
     }
 }
