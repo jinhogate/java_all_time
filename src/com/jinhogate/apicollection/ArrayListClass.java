@@ -1,9 +1,6 @@
 package com.jinhogate.apicollection;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListClass {
 
@@ -96,5 +93,28 @@ public class ArrayListClass {
         System.out.println("Affiche : " + listEntiers);
 //        listEntiers.set(8, 47);
 //        System.out.println("Affiche : " + listEntiers);
+
+        /***
+         * Création des collections préremplies
+         */
+        System.out.println("#Factory Arrays.asList");
+        List<String> collections = Arrays.asList("one","twho","three");
+        System.out.println("Affiche collections : " + collections);
+//        collections.add(1,"four"); //unsupportedOperationException
+//        System.out.println("Affiche collections : " + collections);
+//        collections.remove(2); //unsupportedOperation
+//        System.out.println("Affiche collections : " + collections);
+        System.out.println("Replace all");
+        collections.replaceAll(element -> element = "ok");
+        System.out.println("Affiche collections : " + collections);
+        System.out.println("Set");
+        collections.set(0, "one");
+        System.out.println("Affiche collections : " + collections);
+        System.out.println("#Création des listes immutables avec List.of et Set.of");
+        List<Integer> chiffres = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+        System.out.println("Affiche les chiffres : " + chiffres);
+
+
+
     }
 }
